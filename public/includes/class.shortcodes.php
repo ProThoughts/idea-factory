@@ -130,7 +130,9 @@ class ideaFactoryShortcodes {
 								the_content(); ?>
 
 							</div>
-
+							<span style="margin:  0 20px 0 0; display:  block; float:  left;">by</span>
+							<span style="margin:  0 20px 0 0; display:  block; float:  left;"><?php echo get_the_author(); ?></span>
+							<?php echo get_avatar( get_the_author_meta( 'ID' ) ); ?>
 							<?php do_action('idea_factory_sc_entry_wrap_bottom', $postid ); ?>
 
 						</section>
